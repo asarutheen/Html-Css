@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <a href=""><img src="./images/logo.png" alt="" class="logo" /></a>
+        <div class="search-box">
+          <img src="./images/search.png" alt="" srcset="" />
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+      <div class="navbar-center">
+        <ul>
+          <li>
+            <a href="" class="active-link"
+              ><img src="./images/home.png" alt="" srcset="" /><span
+                >Home</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><img src="./images/network.png" alt="" srcset="" /><span
+                >Network</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><img src="./images/jobs.png" alt="" srcset="" /><span
+                >Jobs</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><img src="./images/message.png" alt="" srcset="" /><span
+                >Messaging</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><img src="./images/notification.png" alt="" srcset="" /><span
+                >Notifications</span
+              ></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <div class="online">
+          <img
+            src="./images/user-1.png"
+            onclick="toggleMenu()"
+            alt=""
+            class="nav-profile-img"
+          />
+        </div>
+        <div class="profile-menu-wrap" id="profileMenu">
+          <div class="profile-menu">
+            <div class="user-info">
+              <img src="./images/user-1.png" alt="" />
+              <div>
+                <h3>Rayan Walton</h3>
+                <a href="">See your profile</a>
+              </div>
+            </div>
+            <hr />
+            <a href="" class="profile-menu-link">
+              <div>
+                <img src="./images/feedback.png" alt="" />
+                <p>Give Feedback</p>
+              </div>
+
+              <span>></span>
+            </a>
+            <a href="" class="profile-menu-link">
+              <div>
+                <img src="./images/setting.png" alt="" />
+                <p>Setting & Privacy</p>
+              </div>
+
+              <span>></span>
+            </a>
+            <a href="" class="profile-menu-link">
+              <div>
+                <img src="./images/help.png" alt="" />
+                <p>Help & Support</p>
+              </div>
+
+              <span>></span>
+            </a>
+
+            <a href="" class="profile-menu-link">
+              <div>
+                <img src="./images/display.png" alt="" />
+                <p>Display & Accessiblity</p>
+              </div>
+
+              <span>></span>
+            </a>
+            <a href="" class="profile-menu-link">
+              <div>
+                <img src="./images/logout.png" alt="" />
+                <p>Logout</p>
+              </div>
+
+              <span>></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ----------------------- navbar close ----------------------- -->
+
+    <div class="container">
+      <div class="profile-main-content">
+        <div class="profile-user-box">
+          <img src="./images/cover-pic.png" width="100%" alt="" />
+          <div class="profile-user-info">
+            <img src="./images/user-1.png" class="profile-round-pic" alt="" />
+            <h1>Rayan Walton</h1>
+            <h3>
+              Web Developer at Microsoft | former developer at Datastack and
+              intern at oracle
+            </h3>
+            <h3>San Fransico, United States . <a href="">Contact Info</a></h3>
+
+            <div class="profile-connection">
+              <img src="./images/user-4.png" alt="" /><span>
+                1 mutual connections: Orlando diggs
+              </span>
+            </div>
+
+            <div class="profile-action">
+              <button><img src="./images/connect.png" alt="" />Connect</button>
+              <button><img src="./images/chat.png" alt="" />Message</button>
+            </div>
+          </div>
+        </div>
+        <div class="profile-about-box">
+          <h1>About</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aut
+            nostrum doloremque consequuntur aspernatur, veritatis placeat
+            corrupti obcaecati porro, soluta asperiores laudantium repudiandae
+            sunt ea dolorem perspiciatis, animi ullam? Delectus.
+          </p>
+          <p class="see-more">See more...</p>
+        </div>
+        <div class="profile-expirence-box">
+          <h1>Expirence</h1>
+          <div class="expirence-list">
+            <img src="./images/microsoft.png" alt="" />
+            <div class="expirence-details">
+              <h1>Lead Front-End Developer</h1>
+              <h3>MicroSoft Full-Time</h3>
+              <h3>Feb 2021 - present - 1.5 years</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Inventore magni similique est, autem doloribus sint quia atque
+                dolor quas tenetu
+              </p>
+              <hr />
+            </div>
+          </div>
+          <div class="expirence-list">
+            <img src="./images/slack.png" alt="" />
+            <div class="expirence-details">
+              <h1>Full Stack Developer</h1>
+              <h3>MicroSoft Full-Time</h3>
+              <h3>Feb 2021 - present - 1.5 years</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Inventore magni similique est, autem doloribus sint quia atque
+                dolor quas tenetu
+              </p>
+              <hr />
+            </div>
+          </div>
+          <div class="expirence-list last">
+            <img src="./images/google.png" alt="" />
+            <div class="expirence-details">
+              <h1>Web Developer</h1>
+              <h3>MicroSoft Full-Time</h3>
+              <h3>Feb 2021 - present - 1.5 years</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Inventore magni similique est, autem doloribus sint quia atque
+                dolor quas tenetu
+              </p>
+            </div>
+          </div>
+          <hr />
+          <p>
+            Show all 7 expirences
+            <img src="./images/right-arrow.png" alt="" />
+          </p>
+        </div>
+        <div class="profile-education-box">
+          <h1>Eduction</h1>
+          <div class="education-list">
+            <img src="./images/microsoft.png" alt="" />
+            <div class="education-details">
+              <h1>Lead Front-End Developer</h1>
+              <h3>MicroSoft Full-Time</h3>
+              <h3>Feb 2021 - present - 1.5 years</h3>
+              <hr />
+            </div>
+          </div>
+          <div class="education-list">
+            <img src="./images/mit.png" alt="" />
+            <div class="education-details">
+              <h1>Lead Front-End Developer</h1>
+              <h3>MicroSoft Full-Time</h3>
+              <h3>Feb 2021 - present - 1.5 years</h3>
+              <hr />
+            </div>
+          </div>
+          <div class="education-list">
+            <img src="./images/stanford.png" alt="" />
+            <div class="education-details">
+              <h1>Lead Front-End Developer</h1>
+              <h3>MicroSoft Full-Time</h3>
+              <h3>Feb 2021 - present - 1.5 years</h3>
+            </div>
+          </div>
+        </div>
+        <div class="profile-skill-box">
+          <h1>Skills</h1>
+          <div class="skill-set">
+            <li>Leadership</li>
+            <li>Web design</li>
+            <li>Development</li>
+            <li>Communication</li>
+            <li>UI/UX</li>
+            <li>Planning</li>
+            <li>Leadership</li>
+            <li>Coding</li>
+            <li>Javascript</li>
+            <li>Python</li>
+            <li>Enterpernership</li>
+          </div>
+        </div>
+
+        <div class="profile-language-box">
+          <h1>Languages</h1>
+          <div class="language-set">
+            <li>Tamil</li>
+            <li>English</li>
+          </div>
+        </div>
+
+        <div class="profile-footer">
+          <a href="">About</a>
+          <a href="">Accessiblity</a>
+          <a href="">Help Center</a>
+          <a href="">Privacy Policy</a>
+          <a href="">Advertising</a>
+          <a href="">Get the app</a>
+          <a href="">More</a>
+
+          <div class="profile-copywrite">
+            <img src="./images/logo.png" alt="" />
+            <p>LinkedUp &#169; 2023. All right reserved</p>
+          </div>
+        </div>
+      </div>
+      <div class="profile-right-sidebar">
+        <div class="sidebar-ad" style="margin-top: 0">
+          <small>Ad &middot;&middot;&middot;</small>
+          <p>Master the 5 principle of web design</p>
+          <div>
+            <img src="./images/user-1.png" alt="" />
+            <img src="./images/mi-logo.png" alt="" />
+          </div>
+          <b>Brand and demand in xiaomi</b>
+          <a href="" class="ad-link">Learn More</a>
+        </div>
+
+        <div class="people-connect-box">
+          <h3>People you may know</h3>
+          <div class="connection">
+            <img src="./images/user-3.png" alt="" />
+            <div class="person-info">
+              <h1>Samuel Timothy</h1>
+              <p>Head of marketing of Alibaba</p>
+              <button>Connect</button>
+            </div>
+          </div>
+          <div class="connection">
+            <img src="./images/user-3.png" alt="" />
+            <div class="person-info">
+              <h1>Samuel Timothy</h1>
+              <p>Head of marketing of Alibaba</p>
+              <button>Connect</button>
+            </div>
+          </div>
+          <div class="connection">
+            <img src="./images/user-3.png" alt="" />
+            <div class="person-info">
+              <h1>Samuel Timothy</h1>
+              <p>Head of marketing of Alibaba</p>
+              <button>Connect</button>
+            </div>
+          </div>
+          <div class="connection">
+            <img src="./images/user-3.png" alt="" />
+            <div class="person-info">
+              <h1>Samuel Timothy</h1>
+              <p>Head of marketing of Alibaba</p>
+              <button>Connect</button>
+            </div>
+          </div>
+          <div class="connection">
+            <img src="./images/user-3.png" alt="" />
+            <div class="person-info">
+              <h1>Samuel Timothy</h1>
+              <p>Head of marketing of Alibaba</p>
+              <button>Connect</button>
+            </div>
+          </div>
+          <div class="connection">
+            <img src="./images/user-3.png" alt="" />
+            <div class="person-info">
+              <h1>Samuel Timothy</h1>
+              <p>Head of marketing of Alibaba</p>
+              <button>Connect</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let profileMenu = document.getElementById("profileMenu");
+
+      function toggleMenu() {
+        profileMenu.classList.toggle("open-menu");
+      }
+    </script>
+  </body>
+</html>

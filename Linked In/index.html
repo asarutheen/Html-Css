@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>LinkedIn Clone</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <a href=""><img src="./images/logo.png" alt="" class="logo" /></a>
+        <div class="search-box">
+          <img src="./images/search.png" alt="" srcset="" />
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+      <div class="navbar-center">
+        <ul>
+          <li>
+            <a href="" class="active-link"
+              ><img src="./images/home.png" alt="" srcset="" /><span
+                >Home</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><img src="./images/network.png" alt="" srcset="" /><span
+                >Network</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><img src="./images/jobs.png" alt="" srcset="" /><span
+                >Jobs</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><img src="./images/message.png" alt="" srcset="" /><span
+                >Messaging</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><img src="./images/notification.png" alt="" srcset="" /><span
+                >Notifications</span
+              ></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <div class="online">
+          <img
+            src="./images/user-1.png"
+            onclick="toggleMenu()"
+            alt=""
+            class="nav-profile-img"
+          />
+        </div>
+        <div class="profile-menu-wrap" id="profileMenu">
+          <div class="profile-menu">
+            <div class="user-info">
+              <img src="./images/user-1.png" alt="" />
+              <div>
+                <h3>Rayan Walton</h3>
+                <a href="">See your profile</a>
+              </div>
+            </div>
+            <hr />
+            <a href="" class="profile-menu-link">
+              <div>
+                <img src="./images/feedback.png" alt="" />
+                <p>Give Feedback</p>
+              </div>
+
+              <span>></span>
+            </a>
+            <a href="" class="profile-menu-link">
+              <div>
+                <img src="./images/setting.png" alt="" />
+                <p>Setting & Privacy</p>
+              </div>
+
+              <span>></span>
+            </a>
+            <a href="" class="profile-menu-link">
+              <div>
+                <img src="./images/help.png" alt="" />
+                <p>Help & Support</p>
+              </div>
+
+              <span>></span>
+            </a>
+
+            <a href="" class="profile-menu-link">
+              <div>
+                <img src="./images/display.png" alt="" />
+                <p>Display & Accessiblity</p>
+              </div>
+
+              <span>></span>
+            </a>
+            <a href="" class="profile-menu-link">
+              <div>
+                <img src="./images/logout.png" alt="" />
+                <p>Logout</p>
+              </div>
+
+              <span>></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ----------------------- navbar close ----------------------- -->
+
+    <div class="container">
+      <div class="left-sidebar">
+        <div class="sidebar-profile-box">
+          <img src="./images/cover-pic.png" alt="" srcset="" />
+          <div class="sidebar-profile-info">
+            <img src="./images/user-1.png" alt="" srcset="" />
+            <h1>Rayan Walton</h1>
+            <h3>Web Developer at Microsoft</h3>
+            <ul>
+              <li>Your profile view <span>52</span></li>
+              <li>Your post view <span>810</span></li>
+              <li>Your connections<span>205</span></li>
+            </ul>
+          </div>
+          <div class="sidebar-profile-link">
+            <a href=""
+              ><img src="./images/items.png" alt="" /><span>My Items</span></a
+            >
+            <a href=""
+              ><img src="./images/premium.png" alt="" /><span
+                >Try premium</span
+              ></a
+            >
+          </div>
+        </div>
+
+        <div class="sidebar-activity">
+          <h3>Recents</h3>
+          <a href=""><img src="./images/recent.png" alt="" />Web Development</a>
+          <a href=""><img src="./images/recent.png" alt="" />User Interface</a
+          ><a href=""><img src="./images/recent.png" alt="" />Online Learning</a
+          ><a href=""><img src="./images/recent.png" alt="" />Code Better</a>
+          <a href=""><img src="./images/recent.png" alt="" />Group Learning</a>
+          <h3>Groups</h3>
+          <a href=""><img src="./images/group.png" alt="" />Web Design Group</a>
+          <a href=""
+            ><img src="./images/group.png" alt="" />Html & css learner</a
+          >
+          <a href=""
+            ><img src="./images/group.png" alt="" />Python Javascript Group</a
+          >
+          <a href=""
+            ><img src="./images/group.png" alt="" />Learn Coding Online</a
+          >
+          <h3>Hashtag</h3>
+          <a href=""><img src="./images/hashtag.png" alt="" />Web Developer</a>
+          <a href=""><img src="./images/hashtag.png" alt="" />User Interface</a>
+          <a href=""><img src="./images/hashtag.png" alt="" />Web Developer</a>
+          <div class="discover-more-link">
+            <a href="">Discover More</a>
+          </div>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="create-post">
+          <div class="create-post-input">
+            <img src="./images/user-1.png" alt="" />
+            <textarea rows="2" placeholder="Write a post"></textarea>
+          </div>
+          <div class="create-post-links">
+            <li><img src="./images/photo.png" alt="" />Photo</li>
+            <li><img src="./images/video.png" alt="" />Video</li>
+            <li><img src="./images/event.png" alt="" />Event</li>
+            <li>Post</li>
+          </div>
+        </div>
+        <div class="sort-by">
+          <hr />
+          <p>
+            Sort by:
+            <span>top <img src="./images/down-arrow.png" alt="" /></span>
+          </p>
+        </div>
+
+        <div class="post">
+          <div class="post-author">
+            <img src="./images/user-3.png" alt="" />
+            <div>
+              <h1>Banjamin Leo</h1>
+              <small>Founder and CEO atGelilio Group | Angular</small>
+              <small>2 hours ago</small>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi u
+          </p>
+          <img src="./images/post-image-1.png" width="100%" alt="" />
+          <div class="post-stats">
+            <div>
+              <img src="./images/thumbsup.png" alt="" />
+              <img src="./images/love.png" alt="" />
+              <img src="./images/clap.png" alt="" />
+              <span>Abhinav Mishra and 75 others</span>
+            </div>
+            <div><span>22 comments . 40 shares</span></div>
+          </div>
+          <hr />
+          <div class="post-activity">
+            <li>
+              <img src="./images/user-1.png" alt="" />
+              <img src="./images/down-arrow.png" alt="" />
+            </li>
+            <li><img src="./images/like.png" alt="" />Like</li>
+            <li><img src="./images/comment.png" alt="" />Comment</li>
+            <li><img src="./images/share.png" alt="" />Share</li>
+            <li><img src="./images/send.png" alt="" />Send</li>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-author">
+            <img src="./images/user-2.png" alt="" />
+            <div>
+              <h1>Banjamin Leo</h1>
+              <small>Founder and CEO atGelilio Group | Angular</small>
+              <small>2 hours ago</small>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi u
+          </p>
+          <img src="./images/post-image-2.png" width="100%" alt="" />
+          <div class="post-stats">
+            <div>
+              <img src="./images/thumbsup.png" alt="" />
+              <img src="./images/love.png" alt="" />
+              <img src="./images/clap.png" alt="" />
+              <span>Abhinav Mishra and 75 others</span>
+            </div>
+            <div><span>22 comments . 40 shares</span></div>
+          </div>
+          <hr />
+          <div class="post-activity">
+            <li>
+              <img src="./images/user-1.png" alt="" />
+              <img src="./images/down-arrow.png" alt="" />
+            </li>
+            <li><img src="./images/like.png" alt="" />Like</li>
+            <li><img src="./images/comment.png" alt="" />Comment</li>
+            <li><img src="./images/share.png" alt="" />Share</li>
+            <li><img src="./images/send.png" alt="" />Send</li>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-author">
+            <img src="./images/user-4.png" alt="" />
+            <div>
+              <h1>Banjamin Leo</h1>
+              <small>Founder and CEO atGelilio Group | Angular</small>
+              <small>2 hours ago</small>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi u
+          </p>
+          <img src="./images/post-image-3.png" width="100%" alt="" />
+          <div class="post-stats">
+            <div>
+              <img src="./images/thumbsup.png" alt="" />
+              <img src="./images/love.png" alt="" />
+              <img src="./images/clap.png" alt="" />
+              <span>Abhinav Mishra and 75 others</span>
+            </div>
+            <div><span>22 comments . 40 shares</span></div>
+          </div>
+          <hr />
+          <div class="post-activity">
+            <li>
+              <img src="./images/user-1.png" alt="" />
+              <img src="./images/down-arrow.png" alt="" />
+            </li>
+            <li><img src="./images/like.png" alt="" />Like</li>
+            <li><img src="./images/comment.png" alt="" />Comment</li>
+            <li><img src="./images/share.png" alt="" />Share</li>
+            <li><img src="./images/send.png" alt="" />Send</li>
+          </div>
+        </div>
+      </div>
+      <div class="right-sidebar">
+        <div class="sidebar-news">
+          <img src="./images/more.png" alt="" class="info-icon" />
+          <h3>Trending News</h3>
+          <a href="">High demand for skilled manpower</a>
+          <span>1d ago &middot; 10,934 readers</span>
+          <a href="">Carrer Growing for skilled manpower</a>
+          <span>1d ago &middot; 10,934 readers</span>
+          <a href="">High demand for skilled manpower</a>
+          <span>1d ago &middot; 10,934 readers</span>
+          <a href="">Carrer Growing for skilled manpower</a>
+          <span>1d ago &middot; 10,934 readers</span>
+          <a href="">High demand for skilled manpower</a>
+          <span>1d ago &middot; 10,934 readers</span>
+
+          <div class="read-more-link">
+            <a href="">Read More</a>
+          </div>
+        </div>
+
+        <div class="sidebar-ad">
+          <small>Ad &middot;&middot;&middot;</small>
+          <p>Master the 5 principle of web design</p>
+          <div>
+            <img src="./images/user-1.png" alt="" />
+            <img src="./images/mi-logo.png" alt="" />
+          </div>
+          <b>Brand and demand in xiaomi</b>
+          <a href="" class="ad-link">Learn More</a>
+        </div>
+
+        <div class="sidebar-useful-links">
+          <a href="">About</a>
+          <a href="">Accessiblity</a>
+          <a href="">Help Center</a>
+          <a href="">Privacy Policy</a>
+          <a href="">Advertising</a>
+          <a href="">Get the app</a>
+          <a href="">More</a>
+        </div>
+
+        <div class="sidebar-copywrite">
+          <img src="./images/logo.png" alt="" />
+          <p>LinkedUp &#169; 2023. All right reserved</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let profileMenu = document.getElementById("profileMenu");
+
+      function toggleMenu() {
+        profileMenu.classList.toggle("open-menu");
+      }
+    </script>
+  </body>
+</html>
