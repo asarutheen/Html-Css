@@ -148,32 +148,49 @@
           </div>
         </div>
 
-        <div class="sidebar-activity">
-          <h3>Recents</h3>
-          <a href=""><img src="./images/recent.png" alt="" />Web Development</a>
-          <a href=""><img src="./images/recent.png" alt="" />User Interface</a
-          ><a href=""><img src="./images/recent.png" alt="" />Online Learning</a
-          ><a href=""><img src="./images/recent.png" alt="" />Code Better</a>
-          <a href=""><img src="./images/recent.png" alt="" />Group Learning</a>
-          <h3>Groups</h3>
-          <a href=""><img src="./images/group.png" alt="" />Web Design Group</a>
-          <a href=""
-            ><img src="./images/group.png" alt="" />Html & css learner</a
-          >
-          <a href=""
-            ><img src="./images/group.png" alt="" />Python Javascript Group</a
-          >
-          <a href=""
-            ><img src="./images/group.png" alt="" />Learn Coding Online</a
-          >
-          <h3>Hashtag</h3>
-          <a href=""><img src="./images/hashtag.png" alt="" />Web Developer</a>
-          <a href=""><img src="./images/hashtag.png" alt="" />User Interface</a>
-          <a href=""><img src="./images/hashtag.png" alt="" />Web Developer</a>
-          <div class="discover-more-link">
-            <a href="">Discover More</a>
+        <div class="sidebar-activity" id="sidebarActivity">
+          <div class="activity-details">
+            <h3>Recents</h3>
+            <a href=""
+              ><img src="./images/recent.png" alt="" />Web Development</a
+            >
+            <a href=""><img src="./images/recent.png" alt="" />User Interface</a
+            ><a href=""
+              ><img src="./images/recent.png" alt="" />Online Learning</a
+            ><a href=""><img src="./images/recent.png" alt="" />Code Better</a>
+            <a href=""
+              ><img src="./images/recent.png" alt="" />Group Learning</a
+            >
+            <h3>Groups</h3>
+            <a href=""
+              ><img src="./images/group.png" alt="" />Web Design Group</a
+            >
+            <a href=""
+              ><img src="./images/group.png" alt="" />Html & css learner</a
+            >
+            <a href=""
+              ><img src="./images/group.png" alt="" />Python Javascript Group</a
+            >
+            <a href=""
+              ><img src="./images/group.png" alt="" />Learn Coding Online</a
+            >
+            <h3>Hashtag</h3>
+            <a href=""
+              ><img src="./images/hashtag.png" alt="" />Web Developer</a
+            >
+            <a href=""
+              ><img src="./images/hashtag.png" alt="" />User Interface</a
+            >
+            <a href=""
+              ><img src="./images/hashtag.png" alt="" />Web Developer</a
+            >
+            <div class="discover-more-link">
+              <a href="">Discover More</a>
+            </div>
           </div>
         </div>
+
+        <p id="showMore" onclick="toggleActivity()">Show more <b>+</b></p>
       </div>
       <div class="main-content">
         <div class="create-post">
@@ -358,6 +375,20 @@
 
       function toggleMenu() {
         profileMenu.classList.toggle("open-menu");
+      }
+    </script>
+
+    <script>
+      let sidebarActivity = document.getElementById("sidebarActivity");
+      let showMore = document.getElementById("showMore");
+
+      function toggleActivity() {
+        sidebarActivity.classList.toggle("open-activity");
+        if (sidebarActivity.classList.contains("open-activity")) {
+          showMore.innerHTML = "Show less <b>-</b>";
+        } else {
+          showMore.innerHTML = "Show more <b>+</b>";
+        }
       }
     </script>
   </body>
