@@ -1,0 +1,396 @@
+:root {
+  --main-color: #dd2f6e;
+  --color-dark: #1d2231;
+  --text-gray: #8390a2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  flex-basis: 25%;
+  background: var(--main-color);
+  position: relative;
+  padding-top: 20px;
+  overflow: hidden;
+}
+
+.logo h1 {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 15%;
+  display: flex;
+  align-items: center;
+  padding-left: 12%;
+}
+
+.logo h1 i {
+  font-size: 1.2rem;
+  margin-right: 5%;
+}
+
+.sidebar-menu h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  /* width: 100%; */
+  height: 50px;
+  margin: 3% 5%;
+  background-color: transparent;
+  border-radius: 30px 0 0 30px;
+  transition: background-color 0.5s;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* h3:hover,
+h3:active {
+  border-radius: 30px 0 0 30px;
+  background-color: #fff;
+  color: var(--main-color);
+} */
+
+.sidebar-menu h3::after {
+  content: "";
+  width: 0;
+  height: 50px;
+  position: absolute;
+  top: 0px;
+  /* left: 0px; */
+  background-color: #fff;
+  border-radius: 30px 0 0 30px;
+  transition: width 0.5s;
+  z-index: -1;
+}
+
+.sidebar-menu h3:hover::after {
+  width: 100%;
+  color: var(--main-color);
+}
+
+h3:hover {
+  color: var(--main-color);
+}
+
+.sidebar-menu h3 i {
+  margin: 0% 8%;
+}
+
+/* ---------------------- side bar ends ------------------------- */
+
+.main-side {
+  background: #f0f8ff;
+  flex-basis: 75%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  width: 100%;
+  padding: 1% 2%;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.left-side i {
+  font-size: 1.6rem;
+  margin-right: 12%;
+}
+
+.search-box {
+  border: 1px solid #000;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  width: 200px;
+  overflow: hidden;
+}
+
+.search-box i {
+  margin-left: 10%;
+  margin-right: 5%;
+}
+
+.search-box input {
+  outline: none;
+  border: none;
+  padding: 8px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  width: 140px;
+}
+
+.profile img {
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 8%;
+}
+
+.user-info p {
+  font-size: 0.8rem;
+}
+
+/* --------------------- navbar ends ------------------ */
+
+.profile-stats {
+  margin: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  width: 200px;
+  height: 150px;
+  background: #fff;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.details {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 3%;
+  margin-right: 5%;
+}
+.details span {
+  display: block;
+  color: #ccc;
+}
+
+.card i {
+  font-size: 2rem;
+  margin-top: -10%;
+  color: var(--main-color);
+}
+
+/* ------------------------- card end ---------------- */
+
+.table-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.project-details-box {
+  background: #fff;
+  width: 65%;
+  margin-left: 3%;
+}
+
+.project-details-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+.project-details-header h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.project-details-header button {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  border: none;
+  background: var(--main-color);
+  color: #fff;
+  padding: 1.5%;
+  border-radius: 10px;
+  width: 90px;
+}
+
+.project-details-header button i {
+  margin-left: 10%;
+}
+
+table {
+  width: 100%;
+}
+
+.line {
+  position: relative;
+}
+
+table tr th {
+  font-size: 1.2rem;
+  text-align: left;
+  padding: 2% 2% 5% 2%;
+  position: relative;
+}
+
+.line::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #1d2231;
+  position: absolute;
+  top: 45px;
+  left: 0;
+}
+
+table tr td {
+  font-size: 1rem;
+  text-align: left;
+  padding: 1% 2% 2% 2%;
+}
+
+/* .line::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #1d2231;
+  position: absolute;
+  top: 0;
+  right: 0;
+} */
+
+.customer-details-box {
+  background: #fff;
+  width: 30%;
+  margin: 0% 3%;
+}
+
+.customer-details-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2%;
+  position: relative;
+  margin-bottom: 6%;
+}
+
+.customer-details-header h1 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.customer-details-header button {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  border: none;
+  background: var(--main-color);
+  color: #fff;
+  padding: 3.5%;
+  border-radius: 10px;
+  width: 80px;
+}
+
+.customer-details-header button i {
+  margin-left: 10%;
+}
+
+.customer-details-header::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #1d2231;
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+
+.customer-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3%;
+}
+
+.customer-details img {
+  width: 50px;
+  border-radius: 50%;
+}
+.action-icon i {
+  font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 750px) {
+  .sidebar {
+    flex-basis: 10%;
+  }
+  .logo h1 {
+    font-size: 0;
+  }
+  .logo h1 i {
+    font-size: 2rem;
+    margin-left: 14%;
+    margin-bottom: 100%;
+  }
+
+  .sidebar h3 {
+    font-size: 0;
+    height: auto;
+  }
+
+  .sidebar-menu h3 i {
+    font-size: 1.2rem;
+    margin-left: 30%;
+    margin-bottom: 50%;
+  }
+
+  .main-side {
+    flex-basis: 90%;
+  }
+
+  .project-details-box {
+    width: 100%;
+    margin-right: 2%;
+  }
+
+  .customer-details-box {
+    width: 60%;
+    margin: 2% auto;
+  }
+
+  .table-content {
+    flex-wrap: wrap;
+  }
+
+  .left-side,
+  .left-side i {
+    font-size: 0.8rem;
+  }
+
+  .search-box {
+    width: 150px;
+  }
+
+  .logo h1 i {
+    margin-left: 0;
+  }
+
+  .card {
+    width: 150px;
+  }
+}
