@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Devchallenges</title>
+  </head>
+  <body>
+    <div class="header">
+      <nav id="toggle-nav">
+        <div class="logo">THIS INTERIOR</div>
+        <div class="hamberg" id="hammergClick">
+          <div class="line-1"></div>
+          <div class="line-2"></div>
+          <div class="line-3"></div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="" class="active-link">Home</a></li>
+            <li><a href="">Collection</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="container" id="container-box">
+      <div class="left-content">
+        <h1>Modern Interior</h1>
+        <p>
+          A full-service residential & commercial interior design and staging
+          company offering professional organizing & eco-services
+        </p>
+        <a href="">Read more</a>
+      </div>
+      <div class="right-content">
+        <div class="image">
+          <img src="./photo1.png" alt="" />
+          <div class="profile">
+            <div class="profile-details">
+              <img src="./photo2.png" alt="" />
+              <div>
+                <h3>Aliza Webber</h3>
+                <p>Interior designer</p>
+              </div>
+            </div>
+            <h2>Designed in 2023 by Aliza Webber</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var toggleNav = document.getElementById("toggle-nav");
+      var hammergClick = document.getElementById("hammergClick");
+      var containerBox = document.getElementById("container-box");
+      hammergClick.onclick = function () {
+        toggleNav.classList.toggle("wrapper");
+        containerBox.classList.toggle("container");
+        containerBox.classList.toggle("wrapper-container");
+      };
+
+      // if (hammergClick.classList.toggle()) {
+      //   toggleNav.classList.add();
+      // }
+    </script>
+  </body>
+</html>
